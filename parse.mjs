@@ -2,6 +2,7 @@
  * Takes a quote and returns an array of valid-length tweets.
  */
 export  function quoteToTweets(quote){
+
     const length = quote.length
     
     if (length <= 280) {
@@ -16,7 +17,6 @@ export  function quoteToTweets(quote){
     sentences.forEach((sentence)=>{
         const length = sentence.length
 
-        
         if (length <= 280) {
             threadTweets.push(sentence.trim())
         } else {
@@ -43,7 +43,9 @@ export  function quoteToTweets(quote){
         
     })
     
-    threadTweets.push(combineSegments)
+    if (combineSegments.length) {
+        threadTweets.push(combineSegments)
+    }
   
     return threadTweets
 }
