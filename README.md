@@ -9,6 +9,7 @@ This is an X (formerly Twitter) automated bot built on AWS. It uses AWS Lambda f
 - Gets the full quote from a static "db" file.
 - Parses the quote into an array of tweet-sized strings. 
 - Using X's API v2, iterates through the array and posts the segments as a thread
+- Updates the count in the DynamoDb Table
 
 ## How to use it
 - Download the code and upload it to your Lambda Function
