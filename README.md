@@ -18,4 +18,4 @@ This is an X (formerly Twitter) automated bot built on AWS. It uses AWS Lambda f
 - Add a schedule/cron Event trigger, or whatever trigger you want.
 - To use a DynamoDB table in your function, create a Policy for the Table resource with the permissions you want (read, write, or simply "*"), and attach it to the function's execution Role.  
 
-
+Total AWS monthly costs: $0 USD :)
